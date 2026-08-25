@@ -187,44 +187,10 @@ main {
   filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.45));
 }
 
-.kit-layer {
-  position: absolute;
-  image-rendering: -webkit-optimize-contrast;
-}
-
-.kit-left-arm {
-  left: 0%;
-  top: 0%;
-  width: 31%;
-  height: 43.7%;
-}
-
-.kit-body {
-  left: 31%;
-  top: 0%;
-  width: 38%;
-  height: 43.7%;
-}
-
-.kit-right-arm {
-  left: 69%;
-  top: 0%;
-  width: 31%;
-  height: 43.7%;
-}
-
-.kit-shorts {
-  left: 0%;
-  top: 43.7%;
+.kit-image {
   width: 100%;
-  height: 26.7%;
-}
-
-.kit-socks {
-  left: 0%;
-  top: 70.4%;
-  width: 100%;
-  height: 29.6%;
+  height: 100%;
+  object-fit: contain;
 }
 
 .kit-label {

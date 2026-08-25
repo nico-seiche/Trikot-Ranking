@@ -114,24 +114,12 @@ function renderKit(container, team) {
   const stage = document.createElement("div");
   stage.className = "kit-stage";
 
-  const layerDefs = [
-    ["kit-shorts", team.kit.shorts],
-    ["kit-socks", team.kit.socks],
-    ["kit-left-arm", team.kit.leftArm],
-    ["kit-right-arm", team.kit.rightArm],
-    ["kit-body", team.kit.body],
-  ];
-  for (const [cls, src] of layerDefs) {
-    const img = document.createElement("img");
-    img.className = `kit-layer ${cls}`;
-    img.src = src;
-    img.alt = "";
-    img.loading = "eager";
-    img.onerror = () => {
-      img.style.display = "none";
-    };
-    stage.appendChild(img);
-  }
+  const img = document.createElement("img");
+  img.className = "kit-image";
+  img.src = team.image;
+  img.alt = team.name;
+  img.loading = "eager";
+  stage.appendChild(img);
 
   const label = document.createElement("div");
   label.className = "kit-label";
