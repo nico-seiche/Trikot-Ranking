@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html lang="de">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Trikot-Ranking – Bundesliga Auswärtstrikots 2026/27</title>
+  <link rel="stylesheet" href="styles.css" />
+</head>
+<body>
+  <header class="site-header">
+    <h1>Trikot-Ranking</h1>
+    <p class="subtitle">Auswärtstrikots der Bundesliga · Saison 2026/27</p>
+  </header>
+
+  <main>
+    <section id="screen-start" class="screen active">
+      <p class="intro">
+        Dir werden immer zwei Auswärtstrikots gegenübergestellt. Wähle das,
+        welches dir besser gefällt – am Ende bekommst du eine vollständige
+        Rangliste aller <span id="team-count">18</span> Trikots.
+      </p>
+      <button id="start-btn" class="btn btn-primary">Ranking starten</button>
+    </section>
+
+    <section id="screen-duel" class="screen">
+      <div class="progress-bar">
+        <div id="progress-fill" class="progress-fill"></div>
+      </div>
+      <p id="progress-label" class="progress-label"></p>
+
+      <div class="duel">
+        <div id="card-a" class="kit-card" tabindex="0"></div>
+        <div class="vs">oder</div>
+        <div id="card-b" class="kit-card" tabindex="0"></div>
+      </div>
+      <p class="hint">Klicken oder Pfeiltasten ← →</p>
+    </section>
+
+    <section id="screen-result" class="screen">
+      <h2>Dein Ranking</h2>
+      <ol id="result-list" class="result-list"></ol>
+      <div class="result-actions">
+        <button id="share-btn" class="btn btn-secondary">Ranking kopieren</button>
+        <button id="restart-btn" class="btn btn-primary">Neu starten</button>
+      </div>
+    </section>
+  </main>
+
+  <footer class="site-footer">
+    <p>
+      Trikot-Grafiken: <a href="https://commons.wikimedia.org/wiki/2026%E2%80%9327_Bundesliga_kits" target="_blank" rel="noopener">Wikimedia Commons</a>.
+      Inoffizielles Fan-Projekt, ohne Verbindung zur DFL oder den Vereinen.
+    </p>
+  </footer>
+
+  <script src="data.js"></script>
+  <script src="app.js"></script>
+</body>
+</html>
