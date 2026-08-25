@@ -1,14 +1,10 @@
 // Bundesliga 2026/27 – Auswärtstrikots
 //
-// Die Bilder in kits/*.png sind aus den einzelnen Kit-Template-Teilen
-// (Ärmel, Rumpf, Hose, Socken) der Wikimedia-Commons-Kategorie
-// "2026–27 Bundesliga kits" zusammengesetzt und liegen lokal im Projekt,
-// damit die Seite nicht bei jedem Duell 10 einzelne Bilder live von
-// Wikimedia laden muss (das war zu langsam und führte zu unvollständig
-// geladenen, falsch aussehenden Trikots).
+// Die Bilder in kits/*.jpg sind reale Produktfotos der aktuellen
+// Auswärtstrikots (von den Nutzern bereitgestellt).
 
 const TEAMS = [
-  { id: "bayern", name: "FC Bayern München", short: "Bayern", color: "#dc052d", image: "kits/bayern.png" },
+  { id: "bayern", name: "FC Bayern München", short: "Bayern", color: "#dc052d", image: "kits/bayern.jpg" },
   { id: "dortmund", name: "Borussia Dortmund", short: "BVB", color: "#fde100", image: "kits/dortmund.jpg" },
   { id: "leipzig", name: "RB Leipzig", short: "RB Leipzig", color: "#dd0741", image: "kits/leipzig.jpg" },
   { id: "stuttgart", name: "VfB Stuttgart", short: "Stuttgart", color: "#e32219", image: "kits/stuttgart.jpg" },
@@ -17,11 +13,11 @@ const TEAMS = [
   { id: "freiburg", name: "SC Freiburg", short: "Freiburg", color: "#000000", image: "kits/freiburg.jpg" },
   { id: "frankfurt", name: "Eintracht Frankfurt", short: "Frankfurt", color: "#e1000f", image: "kits/frankfurt.jpg" },
   { id: "augsburg", name: "FC Augsburg", short: "Augsburg", color: "#ba3733", image: "kits/augsburg.jpg" },
-  { id: "mainz", name: "1. FSV Mainz 05", short: "Mainz 05", color: "#c3141e", image: "kits/mainz.png" },
+  { id: "mainz", name: "1. FSV Mainz 05", short: "Mainz 05", color: "#c3141e", image: "kits/mainz.jpg" },
   { id: "unionberlin", name: "1. FC Union Berlin", short: "Union Berlin", color: "#eb1923", image: "kits/unionberlin.jpg" },
   { id: "gladbach", name: "Borussia Mönchengladbach", short: "Gladbach", color: "#000000", image: "kits/gladbach.jpg" },
   { id: "hsv", name: "Hamburger SV", short: "HSV", color: "#00285e", image: "kits/hsv.jpg" },
-  { id: "koeln", name: "1. FC Köln", short: "Köln", color: "#ed1c24", image: "kits/koeln.png" },
+  { id: "koeln", name: "1. FC Köln", short: "Köln", color: "#ed1c24", image: "kits/koeln.jpg" },
   { id: "werder", name: "SV Werder Bremen", short: "Werder Bremen", color: "#1d9053", image: "kits/werder.jpg" },
   { id: "schalke", name: "FC Schalke 04", short: "Schalke 04", color: "#004b9b", image: "kits/schalke.jpg" },
   { id: "elversberg", name: "SV Elversberg", short: "Elversberg", color: "#003c78", image: "kits/elversberg.jpg" },
