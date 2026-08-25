@@ -183,8 +183,10 @@ main {
 .kit-stage {
   position: relative;
   width: 100%;
-  aspect-ratio: 100 / 135;
-  filter: drop-shadow(0 8px 16px rgba(0, 0, 0, 0.45));
+  aspect-ratio: 4 / 5;
+  border-radius: 10px;
+  overflow: hidden;
+  background: #fff;
 }
 
 .kit-image {
